@@ -10,7 +10,7 @@ const bcrypt    = require('bcrypt');
 // const port = process.env.port || '3000'
 // const dbName = process.env.dbName || 'lead_the_deal'
 
-const sequelize = new Sequelize('lead_the_deal', 'leadthedeal', leadthedeal, {
+const sequelize = new Sequelize('lead_the_deal', 'leadthedeal', 'leadthedeal', {
   host: 'leadthedeal.co5uhag2jtpo.us-east-2.rds.amazonaws.com',
   port: 3306,
   dialect: 'mysql'
