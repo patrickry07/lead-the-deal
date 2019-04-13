@@ -26,6 +26,15 @@ const sequelize = new Sequelize('lead_the_deal', 'leadthedeal', process.env.AWSP
   dialect: 'mysql'
 });
 
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
+
 ///////////////////
 /////MODELS ///////
 ///////////////////
